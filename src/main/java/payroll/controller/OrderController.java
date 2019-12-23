@@ -1,0 +1,30 @@
+package payroll.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import payroll.dto.OrderDto;
+import payroll.service.OrderService;
+
+import java.util.List;
+
+@RestController
+public class OrderController {
+
+    @Autowired
+    OrderService orderService;
+
+    @GetMapping("/orders")
+    List<OrderDto> all() {
+        return orderService.retrieveOrderList();
+    }
+
+    @PostMapping("/orders")
+    ResponseEntity<String> create(@RequestBody OrderDto dto) {
+        return orderService.postOrder(dto);
+    }
+
+}

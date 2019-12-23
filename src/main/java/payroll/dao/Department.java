@@ -1,4 +1,4 @@
-package payroll.DAO;
+package payroll.dao;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
@@ -26,7 +26,7 @@ public class Department {
     @JsonManagedReference
     private List<Employee> employeeList;
 
-    public Department(String name){
+    public Department(String name) {
         this.name = name;
     }
 }

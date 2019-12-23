@@ -1,11 +1,9 @@
-package payroll.controller;
+package payroll.dto;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.validation.constraints.Size;
 
 @Data
 @AllArgsConstructor
@@ -14,5 +12,6 @@ public class EmployeeDto {
 
     private String name;
     private String role;
+    private Integer wallet;
     private String departmentname;
 }

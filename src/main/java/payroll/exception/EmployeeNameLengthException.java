@@ -1,4 +1,4 @@
-package payroll.exeption;
+package payroll.exception;
 
 public class EmployeeNameLengthException extends RuntimeException {
 

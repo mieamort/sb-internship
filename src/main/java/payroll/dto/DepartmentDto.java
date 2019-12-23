@@ -1,4 +1,4 @@
-package payroll.controller;
+package payroll.dto;
 
 import lombok.Data;
 

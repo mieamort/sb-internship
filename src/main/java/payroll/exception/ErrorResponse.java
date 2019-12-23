@@ -1,4 +1,4 @@
-package payroll.exeption;
+package payroll.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
